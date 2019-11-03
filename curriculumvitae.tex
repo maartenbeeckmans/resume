@@ -1,0 +1,177 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Developer CV
+% LaTeX Template
+% Version 1.0 (28/1/19)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Jan Vorisek (jan@vorisek.me)
+% Based on a template by Jan Küster (info@jankuester.com)
+% Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.50\textwidth} % 45% of the page width for name
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% If your name is very short, use just one of the lines below
+	% If your name is very long, reduce the font size or make the minipage wider and reduce the others proportionately
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Maarten}}}}} % First name
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Beeckmans}}}}} % Last name
+	\vspace{6pt}
+	
+	{\huge Student Toegepaste Informatica\\Hogeschool Gent} % Career or current job title
+\end{minipage}
+\begin{minipage}[t]{0.50\textwidth} % 27.5% of the page width for the first row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+	\icon{MapMarker}{12}{\href{https://www.google.com/maps/place/Grote+Kapellestraat+41,+9910+Knesselare/@51.1259558,3.4264605,17z/data=!3m1!4b1!4m5!3m4!1s0x47c342b5b1ea76f7:0xa56e6312731fd94a!8m2!3d51.1259558!4d3.4286492}{Grote Kapellestraat 41, 9910 Knesselare}}\\
+	\icon{Phone}{12}{+32 484 09 04 07}\\
+	\icon{At}{12}{\href{mailto:maarten.beeckmans@student.hogent.be}{maarten.beeckmans@student.hogent.be}}\\
+	\icon{Github}{12}{\href{https://github.com/maartenbeeckmans}{github.com/maartenbeeckmans}}\\
+	\icon{Linkedin}{12}{\href{https://www.linkedin.com/in/beeckmansmaarten/}{linkedin.com/in/beeckmansmaarten}}
+\end{minipage}
+
+\vspace{0.5cm}
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
+\cvsect{Wie ben ik}
+
+\begin{minipage}[t]{0.4\textwidth} % 40% of the page width for the introduction text
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	Ik ben Maarten Beeckmans, geboren op 24 februari 1999 te Brugge. Ik ben in het bezit van een rijbewijs en een eigen wagen.\\
+	Graag zou ik mij verder ontwikkelen op persoonlijk en professioneel vlak, ervaring opdoen dat ik in mijn verdere carri\`ere kan gebruiken.
+	% Dummy text
+\end{minipage}
+\hfill % Whitespace between
+\begin{minipage}[t]{0.5\textwidth} % 50% of the page for the skills bar chart
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\begin{barchart}{5.5}
+		\baritem{Linux Bash}{70}
+		\baritem{Red Had Linux}{50}
+		\baritem{Windows}{95}
+		\baritem{Windows Server}{75}
+		\baritem{Cisco CCNA}{80}
+		\baritem{Git}{40}
+	\end{barchart}
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\cvsect{Ervaring}
+
+\begin{entrylist}
+	\entry
+		{2019\\\footnotesize{Schoolproject}}
+		{Projecten II}
+		{Hogeschool Gent}
+		{Dit project bestond uit verschillende opdrachten, zo moesten we een Cisco IOS netwerk opzetten, het automatiseren van LAMP stacks a.d.h.v. Vagrant en Bash Scripts, opstellen van offertes voor aankoop hardware, automatisch uitrollen van van Windows Clients met Windows Deployment Toolkit en het opzetten van een webapplicatieserver waarvan automatisch backups worden genomen.
+		\\ \texttt{Linux Bash}\slashsep\texttt{Vagrant}\slashsep\texttt{Windows}\slashsep\texttt{Cisco IOS}\slashsep\texttt{Windows Deployment toolkit}}
+	\entry
+	    {Augustus 2018\\\footnotesize{Vakantiejob}}
+	    {I-ICT.224 User Support}
+	    {\href{https://www.infrabel.be/}{infrabel.be}}
+	    {Helpen op de dienst I-ICT.224 User Support.}
+	\entry
+		{2018\\\footnotesize{Schoolproject}}
+		{Projecten I}
+		{Hogeschool Gent}
+		{Programmeren van het spel 'Mastermind' in Java\\
+		\texttt{Java}\slashsep\texttt{SQL}}
+	\entry
+	    {Augustus 2017\\\footnotesize{Vakantiejob}}
+	    {I-ICT.1}
+	    {\href{https://www.infrabel.be/}{infrabel.be}}
+	    {Helpen met opkuis en reorganisatie van computermagazijn.}
+	\entry
+		{Maart 2017\\\footnotesize{3 weken}}
+		{Stage Info Computers BVBA}
+		{\href{https://www.infocomputers.be/}{infocomputers.be}}
+		{Bouwen van computers, reparaties uitvoeren (hardware en software)\\
+		\texttt{Windows}\slashsep\texttt{Windows Server}\slashsep\texttt{Linux}}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\cvsect{Opleiding}
+
+\begin{entrylist}
+	\entry
+		{2017 -- \textit{2020}}
+		{\href{https://www.hogent.be/opleidingen/bachelors/toegepaste-informatica/}{Bachelor Toegepaste Informatica}}
+		{Hogeschool Gent}
+		{In deze opleiding heb ik gekozen in het tweede jaar voor het keuzepakket Systeem- en netwerkbeheer. In het derde jaar heb ik terug gekozen in Systeem- en netwerkbeheer omdat ik mij verder wil specialiseren in Linux. }
+	\entry
+		{2015 -- 2017}
+		{\href{https://www.sintjozefbrugge.be/5e-en-6e-netwerken-en-it/}{Informaticabeheer}}
+		{Sint-JozefsInstituur Handel \& Toerisme Brugge}
+		{Ik heb voor deze opleiding gekozen omdat ik graag iets zou doen met Informatica.}
+	\entry
+		{2011 -- 2015}
+		{ASO Wetenschappen-Wiskunde}
+		{Emmaus Secundair Aalter}
+		{ }
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	ADDITIONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+	\cvsect{Talen}
+	
+	\textbf{Nederlands} - moedertaal\\
+	\textbf{Engels} - \faicon{microphone}  \textit{goed}, \faicon{pencil} \textit{goed}\\
+	\textbf{Frans} - \faicon{microphone}  \textit{basis}, \faicon{pencil} \textit{basis}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	\cvsect{Hobbies}
+	
+	In mijn vrije tijd hou ik mij bezig met \href{https://www.geocaching.com/}{Geocaching}.
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	\cvsect{Vrijwilligerswerk}
+	
+	In mijn vrije tijd geef ik ook nog programmeerles aan kinderen van het tweede tot het vierde middelbaar bij \href{https://www.codefever.be/nl}{Codefever VZW}. Hierin brengen we ze de beginselen bij van Javascript
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
